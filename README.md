@@ -1,4 +1,4 @@
-# Solace client
+# Solace simple client
 
 A simple client for Solace.
 
