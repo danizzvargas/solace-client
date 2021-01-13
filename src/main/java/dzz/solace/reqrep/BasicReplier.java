@@ -38,6 +38,7 @@ public class BasicReplier extends SolaceBase {
             try {
                 Destination replyDestination = request.getJMSReplyTo();
                 log.info("Destination: {}", replyDestination.toString());
+                log.info("Request received:\n{}", ((TextMessage) request).getText());
                 log.info("Received request, responding...");
 
                 TextMessage reply = sessionResponse.Session.createTextMessage();
