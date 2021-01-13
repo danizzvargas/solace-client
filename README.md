@@ -1,6 +1,6 @@
 # Solace client
 
-A simple Solace client developed in Java.
+A simple client for Solace.
 
 ## Overview
 
