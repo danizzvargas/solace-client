@@ -65,7 +65,8 @@ public class SolaceClientJCSMP extends SolaceBase {
         // XML message.
         XMLContentMessage xmlMsg = JCSMPFactory.onlyInstance().createMessage(XMLContentMessage.class);
         SDTMap map = JCSMPFactory.onlyInstance().createMap();
-        map.putString("custom-key", "custom-value");
+        map.putString("event_type", "my-event");
+        map.putString("event_version", "1.0.0");
         xmlMsg.setProperties(map);
 
         try (Scanner keyboard = new Scanner(System.in)) {
